@@ -34,7 +34,7 @@ class Car:
         if not (1000000 <= vin_number <= 9999999):
             # создание класса ошибки при несоответствии условию диапазона vin_number
             raise IncorrectVinNumber('Неверный диапазон для vin номера')
-        # возвраnnnт при корректном vin_number
+        # возврат при корректном vin_number
         return True
     # метод __is_valid_numbers проверяет корректность numbers
     def __is_valid_numbers(self, numbers):
