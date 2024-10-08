@@ -4,12 +4,14 @@
 class IncorrectVinNumber(Exception):
     def __init__(self, message):
         self.message = message
+        super().__init__(self.message) # обязательная строка
 
 # объявление класса ошибки IncorrectCarNumbers наследуемый от Exception,
 # объекты которого обладают атрибутом message
 class IncorrectCarNumbers(Exception):
     def __init__(self, message):
         self.message = message
+        super().__init__(self.message) # обязательная строка
 
 # объявление класса Car
 class Car:
